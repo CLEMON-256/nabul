@@ -6,85 +6,10 @@
   background: #f6f9fc;
 }
 
-.features-hero {
-  position: relative;
-  min-height: 420px;
-  background-image: linear-gradient(135deg, rgba(17, 24, 39, 0.82), rgba(39, 59, 121, 0.45)), url('/hero1.png');
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  padding: 64px 24px 120px;
-  overflow: hidden;
-}
-
-.features-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(17,24,39,0.55), rgba(17,24,39,0.9));
-}
-
-.features-hero__content {
-  position: relative;
-  max-width: 680px;
-  color: #ffffff;
-  z-index: 1;
-}
-
-.features-hero__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  color: #7dd3fc;
-}
-
-.features-hero__title {
-  font-size: clamp(3rem, 6vw, 5rem);
-  line-height: 0.95;
-  margin: 0;
-  letter-spacing: -0.06em;
-}
-
-.features-hero__text {
-  margin: 1.5rem 0 0;
-  max-width: 520px;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.features-hero__dots {
-  display: flex;
-  gap: 10px;
-  margin-top: 2rem;
-}
-
-.features-hero__dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.16);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.features-hero__dot--active {
-  background: #38bdf8;
-  transform: scale(1.15);
-  border-color: rgba(56, 189, 248, 0.95);
-}
-
 .features-container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 24px 80px;
-  transform: translateY(-64px);
+  padding: 80px 24px 80px;
 }
 
 .features-grid {
@@ -161,22 +86,12 @@
   }
 
   .features-container {
-    transform: translateY(-48px);
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .features-hero {
-    min-height: 360px;
-    padding: 48px 24px 100px;
-  }
-
-  .features-hero__title {
-    font-size: clamp(2.5rem, 8vw, 3.8rem);
-  }
-
   .features-container {
-    transform: translateY(-38px);
     padding-bottom: 60px;
   }
 
@@ -190,12 +105,7 @@
     grid-template-columns: 1fr;
   }
 
-  .features-hero {
-    padding: 40px 20px 84px;
-  }
-
   .features-container {
-    transform: translateY(-28px);
     padding-bottom: 40px;
   }
 

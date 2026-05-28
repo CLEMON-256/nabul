@@ -61,21 +61,6 @@ const featuresData = [
 export default function Features() {
   return (
     <section className="features-section">
-      <div className="features-hero">
-        <div className="features-hero__content">
-          <span className="features-hero__eyebrow">More Than One</span>
-          <h2 className="features-hero__title">Campus</h2>
-          <p className="features-hero__text">
-            Our campuses provide inspiring learning environments, modern facilities and a warm community where every child can thrive.
-          </p>
-          <div className="features-hero__dots">
-            <button className="features-hero__dot features-hero__dot--active" aria-label="Slide 1" />
-            <button className="features-hero__dot" aria-label="Slide 2" />
-            <button className="features-hero__dot" aria-label="Slide 3" />
-          </div>
-        </div>
-      </div>
-
       <div className="features-container">
         <div className="features-grid">
           {featuresData.map((feature, index) => (
