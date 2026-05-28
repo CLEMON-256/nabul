@@ -1,0 +1,136 @@
+.navbar {
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar--sticky {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar--sticky .navbar__top {
+  display: none; /* Hide top bar when scrolled for a cleaner look */
+}
+
+.navbar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__top {
+  background: #ffffff; /* make top bar white */
+  color: #1a365d;
+  font-size: 0.8rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(26, 54, 93, 0.06);
+}
+
+.navbar__top-info, .navbar__top-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__top-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar__top-actions a {
+  color: #1a365d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navbar__top-actions a:hover {
+  color: #0b2b5a;
+}
+
+.navbar__main {
+  padding: 15px 0;
+  background: #ffffff;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar__logo-img {
+  height: 50px;
+}
+
+.navbar__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__brand-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0f1724;
+  letter-spacing: -0.5px;
+}
+
+.navbar__brand-tag {
+  font-size: 0.65rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar__link:hover, .navbar__link--active {
+  color: #1a365d;
+}
+
+.navbar__cta {
+  background: #1a365d;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  border: 1px solid rgba(26,54,93,0.18);
+}
+
+.navbar__cta:hover {
+  transform: translateY(-2px);
+  background: #164785;
+  box-shadow: 0 10px 24px rgba(26,31,68,0.18);
+}

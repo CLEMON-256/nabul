@@ -1,0 +1,167 @@
+/* ============================================
+   ADMISSION CALL TO ACTION STYLES
+   ============================================ */
+
+.admission-cta {
+  position: relative;
+  width: 100%;
+  padding: 6.5rem 2rem;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Background image overlay combo */
+.cta-background {
+  position: absolute;
+  inset: 0;
+  background-image: url('/hero3.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 26, 54, 0.93) 0%,
+    rgba(10, 36, 99, 0.85) 60%,
+    rgba(30, 165, 252, 0.7) 100%
+  );
+  z-index: 2;
+}
+
+.cta-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.cta-content-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Text components */
+.cta-badge {
+  display: inline-block;
+  background: rgba(245, 200, 66, 0.25);
+  border: 1px solid rgba(245, 200, 66, 0.5);
+  color: #f5c842;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.cta-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-subheading {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  font-weight: 400;
+}
+
+/* Rounded CTA button styling */
+.cta-button-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.15rem 2.25rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0b1a36;
+  background: #f5c842;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(245, 200, 66, 0.3);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+  color: #1ea5fc;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Responsive details */
+@media (max-width: 900px) {
+  .cta-content-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  
+  .cta-button-side {
+    justify-content: center;
+  }
+  
+  .cta-subheading {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .admission-cta {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-cta {
+    padding: 4rem 1.25rem;
+  }
+
+  .cta-heading {
+    font-size: 1.75rem;
+  }
+
+  .cta-subheading {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}

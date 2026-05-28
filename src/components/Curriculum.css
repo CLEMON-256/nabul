@@ -1,0 +1,332 @@
+/* ============================================
+   CURRICULUM SECTION STYLES
+   ============================================ */
+
+.curriculum-section {
+  padding: 8rem 2rem;
+  background: #ffffff;
+  color: #1a253c;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.curr-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.curr-section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.curr-main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #0b2a59;
+  margin: 0;
+  font-weight: 800;
+}
+
+.curr-highlight {
+  color: var(--brand);
+}
+
+.curr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* --- LEFT COLUMN: IMAGE DISPLAY --- */
+.curr-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+}
+
+.classroom-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+/* Overlapping badge */
+.experience-badge {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  background: #002244;
+  color: #ffffff;
+  padding: 1.5rem 1.85rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 34, 68, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exp-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #f5c842;
+  margin-bottom: 0.2rem;
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+
+/* Decorative dots background */
+.deco-dot {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: radial-gradient(rgba(30, 165, 252, 0.25) 20%, transparent 20%);
+  background-size: 10px 10px;
+  z-index: 1;
+}
+
+.dot-1 {
+  top: -30px;
+  left: -30px;
+}
+
+.dot-2 {
+  bottom: -30px;
+  right: -30px;
+}
+
+/* --- RIGHT COLUMN: CURRICULUM INFO --- */
+.curr-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.curr-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1ea5fc;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.curr-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0b1a36;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+.curr-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: #1ea5fc;
+  border-radius: 2px;
+}
+
+.curr-intro {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #5c687e;
+  margin-top: 0.25rem;
+  margin-bottom: 1.8rem;
+}
+
+.curr-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.curr-pillar-row {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.curr-pillar-icon-box {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(30, 165, 252, 0.08);
+  color: #1ea5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curr-pillar-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.curr-pillar-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #0b1a36;
+  margin-bottom: 0.4rem;
+}
+
+.curr-pillar-desc {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #5c687e;
+  margin: 0;
+}
+
+/* Download button */
+.curr-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.9rem 1.85rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1ea5fc;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(30, 165, 252, 0.25);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: fit-content;
+}
+
+.curr-btn-primary:hover {
+  background: #0d8de2;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 165, 252, 0.4);
+}
+
+.curr-btn-primary svg {
+  transition: transform 0.3s ease;
+}
+
+.curr-btn-primary:hover svg {
+  transform: translateY(2px);
+}
+
+.curr-subsection {
+  margin-top: 2.5rem;
+}
+
+.curr-subsection-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: #222f4a;
+  margin: 1.75rem 0 0.8rem;
+}
+
+.curr-subsection-text {
+  color: #5c687e;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* --- RESPONSIVE DETAILS --- */
+@media (max-width: 1024px) {
+  .curr-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  
+  .curr-left {
+    order: 2; /* Move image below text for mid-screen devices */
+  }
+}
+
+@media (max-width: 768px) {
+  .curriculum-section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .classroom-image {
+    border-radius: 16px;
+  }
+  
+  .experience-badge {
+    bottom: -15px;
+    right: -15px;
+    padding: 1rem 1.25rem;
+  }
+  
+  .exp-num {
+    font-size: 1.3rem;
+  }
+  
+  .exp-text {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .curr-title {
+    font-size: 1.9rem;
+  }
+
+  .curr-intro {
+    font-size: 0.95rem;
+  }
+
+  .experience-badge {
+    bottom: -10px;
+    right: 10px;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+  }
+
+  .exp-num {
+    font-size: 1.1rem;
+  }
+
+  .exp-text {
+    font-size: 0.6rem;
+    white-space: normal;
+    text-align: center;
+    max-width: 80px;
+  }
+
+  .curr-btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .curr-pillar-row {
+    gap: 1rem;
+  }
+}

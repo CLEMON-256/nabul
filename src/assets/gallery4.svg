@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gA" x1="0" x2="1">
+      <stop offset="0" stop-color="#eaf6ff"/>
+      <stop offset="1" stop-color="#d9f0ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f7fdff"/>
+
+  <rect x="60" y="120" width="1080" height="520" rx="18" fill="#ffffff"/>
+
+  <g transform="translate(140,200)">
+    <!-- Group photo grid -->
+    <rect x="0" y="0" width="320" height="220" rx="10" fill="#f0f8ff"/>
+    <rect x="340" y="0" width="320" height="220" rx="10" fill="#fff4f0"/>
+    <rect x="680" y="0" width="240" height="220" rx="10" fill="#f0fff5"/>
+
+    <!-- small figures -->
+    <circle cx="60" cy="120" r="20" fill="#ffd9b6"/>
+    <circle cx="400" cy="140" r="18" fill="#ffe9c8"/>
+    <circle cx="760" cy="110" r="22" fill="#ffd9b6"/>
+  </g>
+
+  <g transform="translate(90,40)">
+    <rect width="420" height="76" rx="38" fill="#1d73ff"/>
+    <text x="210" y="48" font-family="Inter, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="700">Campus Life & Groups</text>
+  </g>
+</svg>

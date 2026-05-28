@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="p1" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffe9d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f8fcff"/>
+
+  <!-- Playground base -->
+  <rect x="60" y="120" width="1080" height="520" rx="18" fill="#ffffff"/>
+
+  <!-- Slides and play elements -->
+  <g transform="translate(140,220)">
+    <rect x="0" y="40" width="220" height="160" rx="12" fill="#ffefc8"/>
+    <rect x="260" y="0" width="340" height="220" rx="12" fill="#ffd9d9"/>
+    <rect x="640" y="20" width="320" height="200" rx="12" fill="#dff7ff"/>
+
+    <!-- small children dots -->
+    <circle cx="60" cy="170" r="14" fill="#ffd9b6"/>
+    <circle cx="320" cy="200" r="14" fill="#ffe9c8"/>
+    <circle cx="720" cy="180" r="14" fill="#ffd9b6"/>
+  </g>
+
+  <!-- Decorative header -->
+  <g transform="translate(90,40)">
+    <rect width="420" height="76" rx="38" fill="#1d73ff"/>
+    <text x="210" y="48" font-family="Inter, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="700">Playground & Activities</text>
+  </g>
+</svg>

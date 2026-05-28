@@ -1,0 +1,155 @@
+/* ============================================
+   AIMS & VALUES SECTION STYLES (Refined)
+   ============================================ */
+
+.aims-values {
+  padding: 6.5rem 1.5rem;
+  background: var(--section-bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+.av-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.av-section-header {
+  text-align: center;
+  margin-bottom: 3.25rem;
+}
+
+.av-main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  margin: 0 0 0.6rem;
+  color: var(--brand-dark);
+}
+
+.av-highlight {
+  color: var(--brand);
+}
+
+.av-intro {
+  color: var(--text-muted);
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.av-grid {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* --- LEFT COLUMN: AIMS --- */
+.av-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.av-aims-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-left: 0;
+}
+
+.av-aim-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.av-bullet {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(30, 157, 246, 0.12);
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+
+.av-aim-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* --- RIGHT COLUMN: VALUES --- */
+.values-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.values-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+}
+
+.values-lead {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.values-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.values-item {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.values-label {
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.values-desc {
+  color: var(--text-muted);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .av-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .av-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .av-main-title {
+    font-size: 1.8rem;
+  }
+
+  .av-bullet {
+    width: 28px;
+    height: 28px;
+  }
+
+  .av-aim-text {
+    line-height: 1.6;
+  }
+}

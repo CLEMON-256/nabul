@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="c1" x1="0" x2="1">
+      <stop offset="0" stop-color="#f0f9ff"/>
+      <stop offset="1" stop-color="#e6f7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#fbfdff"/>
+
+  <rect x="60" y="120" width="1080" height="520" rx="18" fill="#fff"/>
+
+  <!-- Stage illustration -->
+  <g transform="translate(160,180)">
+    <rect x="0" y="220" width="880" height="120" rx="12" fill="#f3f6ff"/>
+    <rect x="40" y="40" width="760" height="200" rx="8" fill="#ffefef"/>
+
+    <!-- singer stylized -->
+    <g transform="translate(560,80)">
+      <circle cx="40" cy="40" r="36" fill="#ffd9b6"/>
+      <rect x="8" y="82" width="64" height="110" rx="10" fill="#1d73ff"/>
+    </g>
+
+    <!-- crowd dots -->
+    <g transform="translate(80,300)">
+      <circle cx="0" cy="0" r="12" fill="#ffd9b6"/>
+      <circle cx="28" cy="-4" r="12" fill="#ffe9c8"/>
+      <circle cx="56" cy="2" r="12" fill="#ffd9b6"/>
+      <circle cx="84" cy="-6" r="12" fill="#ffe9c8"/>
+    </g>
+  </g>
+
+  <g transform="translate(90,40)">
+    <rect width="420" height="76" rx="38" fill="#5ab1ff"/>
+    <text x="210" y="48" font-family="Inter, sans-serif" font-size="22" fill="#06233c" text-anchor="middle" font-weight="700">Events & Celebrations</text>
+  </g>
+</svg>

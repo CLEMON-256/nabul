@@ -1,0 +1,302 @@
+/* ============================================
+   WELCOME & FACILITIES SECTION STYLES
+   ============================================ */
+
+.welcome-facilities {
+  padding: 8rem 2rem;
+  background: #ffffff;
+  color: #1a253c;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.wf-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wf-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* --- LEFT COLUMN: FACILITIES --- */
+.wf-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.wf-section-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1ea5fc;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.wf-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0b1a36;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.wf-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #1ea5fc;
+  border-radius: 2px;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem 2rem;
+}
+
+.facility-card {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  align-items: flex-start;
+}
+
+.facility-card:hover {
+  transform: translateX(5px);
+}
+
+.facility-icon {
+  flex-shrink: 0;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: 0 10px 22px rgba(30, 157, 246, 0.12);
+}
+
+.facility-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: #ffffff;
+  stroke-width: 1.6;
+}
+
+.facility-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.facility-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  margin-bottom: 0.35rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.facility-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin: 0;
+  max-width: 460px;
+}
+
+.wf-left-actions {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.wf-docs-note {
+  max-width: 520px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* --- RIGHT COLUMN: WELCOME CARD --- */
+.wf-right {
+  position: sticky;
+  top: 88px;
+}
+
+.wf-right-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-radius: 18px;
+  padding: 2.25rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--border);
+}
+
+.wf-founded-badge {
+  background: rgba(29, 115, 255, 0.12);
+  color: #1d73ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wf-welcome-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  line-height: 1.25;
+  margin: 1rem 0 0.6rem;
+}
+
+.text-highlight {
+  color: #1ea5fc;
+}
+
+.wf-lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #3b4d6d;
+  font-weight: 500;
+}
+
+.wf-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.wf-paragraph {
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.wf-paragraph:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* Button UI system */
+.wf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.9rem 1.85rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wf-btn--primary {
+  background: var(--brand);
+  color: #ffffff;
+  box-shadow: 0 16px 40px rgba(29, 115, 255, 0.2);
+  padding: 1rem 2.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.wf-btn--primary:hover {
+  background: #1687d9;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 46px rgba(29, 115, 255, 0.24);
+}
+
+.wf-btn--accent {
+  background: var(--accent);
+  color: var(--brand-dark);
+  box-shadow: 0 8px 26px rgba(245, 200, 66, 0.16);
+}
+
+.wf-btn--accent:hover {
+  background: #e7b737;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(231, 183, 55, 0.18);
+}
+
+.wf-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.wf-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* --- RESPONSIVE WORK --- */
+@media (max-width: 1100px) {
+  .wf-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .wf-right {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-facilities {
+    padding: 5rem 1.5rem;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .wf-welcome-title {
+    font-size: 1.85rem;
+  }
+
+  .wf-right-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-facilities {
+    padding: 4rem 1.25rem;
+  }
+
+  .wf-title {
+    font-size: 1.9rem;
+  }
+
+  .wf-welcome-title {
+    font-size: 1.6rem;
+  }
+
+  .wf-right-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .wf-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
